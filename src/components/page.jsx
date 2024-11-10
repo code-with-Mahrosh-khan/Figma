@@ -1,13 +1,15 @@
 import React from "react";
+import Main2 from "../components/main2"
 import Main from "./main";
 import Cat from "./Cat";
 
 function Page (){
 return(
-    <div>
+   <div>
+     <Main2 />
         <Main />
 <Cat />
-    </div>
+  </div> 
 )
 
 }

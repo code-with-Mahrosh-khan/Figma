@@ -11,7 +11,7 @@ function Homepage() {
      <Mainpage/>
       <Sidebar />
   <Page />
-<Count/> {/* <Thank/> */}
+<Count/> 
 
 
 </div>

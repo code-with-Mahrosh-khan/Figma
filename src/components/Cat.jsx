@@ -21,7 +21,7 @@ function Cat() {
             <img
               src={catt}
               alt="Concierge Services"
-              className="relative w-full md:w-[390px] rounded-[40px] md:rounded-[75px] h-auto mt-11 md:mt-[36%] mr-0 md:mr-8"
+              className="relative w-full md:w-[360px] rounded-[40px] md:rounded-[75px] h-auto mt-11 md:mt-[36%] mr-0 md:mr-[-20px] 0"
             />
           </div>
 
@@ -42,12 +42,12 @@ function Cat() {
             </div>
           </div>
 
-          <div className="relative w-full md:w-1/3 flex flex-col items-center mt-10 md:mt-0">
+          <div className="relative w-full md:w-1/3 flex flex-col items-center   md:mt-0">
             <img src={vector2} alt="" className="absolute top-0 hidden md:block" />
 <img
 src={mg}
 alt="Transportation"
-className="relative w-full md:w-[339px] h-auto md:h-[405px] mt-10 md:mt-[108%] rounded-[40px] md:rounded-[75px] ml-0 md:ml-16"
+className="relative  w-[338px] md:w-[339px] h-[423px] md:h-[405px]  md:mt-[86%] rounded-[40px] md:rounded-[75px] ml-0 md:ml-16"
 />
 </div>
 </div>
