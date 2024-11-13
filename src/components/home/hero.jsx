@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
 import { FaPlaneDeparture, FaPlaneArrival } from "react-icons/fa";
-import { BsPersonFill } from "react-icons/bs";
-import image1 from "../../assets/image 2.png"
-import { Link } from "react-router-dom";
-
-
+import { BsPersonFill } from "react-icons/bs"; // Importing passenger icon
+import image1 from "../../assets/image 2.png";
+import { Link } from "react-router-dom"
 function Hero() {
   const [activeTripType, setActiveTripType] = useState("One Trip");
-  const [planeType, setPlaneType] = useState(""); 
+  const [planeType, setPlaneType] = useState(""); // State for plane type
 
   return (
     <>
       <main className="flex flex-col lg:flex-row w-full h-full bg-black text-white mt-[-10.5%] lg:top-0">
+        {/* Left Section with Image and Overlayed Text */}
         <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-full mt-16">
           <img
             src={image1}
@@ -21,10 +20,10 @@ function Hero() {
           />
 
           <div
-            className="absolute mt-[8%] left-5 lg:top-10 lg:left-10 p-4 lg:p-10"
+            className="absolute top-5 left-5 lg:top-10 lg:left-10 p-4 lg:p-10"
             style={{ fontFamily: "Italiana, serif" }}
           >
-            <h1 className="font-semibold  text-4xl lg:text-6xl leading-tight">ALTITUDE</h1>
+            <h1 className="font-semibold text-4xl lg:text-6xl leading-tight">ALTITUDE</h1>
             <h1 className="font-semibold text-4xl lg:text-6xl leading-tight">CHARTER</h1>
             <p
               className="mt-4 font-semibold text-base lg:text-lg"
@@ -41,15 +40,15 @@ function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center lg:items-start  mt-[5%] w-full lg:w-1/2 h-full px-6 lg:px-20 py-8 lg:py-0">
-          <section className="w-full max-w-lg bg-[#0c0b0b] text-white p-6 rounded-[13px] mt-[100px] shadow-lg space-y-6">
-            <div className="flex justify-between mb-6 space-x-2">
+        <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 h-full px-6 lg:px-20 py-8 lg:py-0">
+          <section className="w-full mt-[140px] max-w-lg bg-[#0c0b0b] text-white p-6 rounded-[13px] shadow-lg space-y-6">
+            <div className="flex justify-between  mt-4  space-x-2">
               {["One Trip", "Round Trip", "Multi Leg"].map((type) => (
                 <button
                   key={type}
                   onClick={() => setActiveTripType(type)}
                   className={`flex-1 px-3 py-2 rounded border border-gray-400
-                    ${activeTripType === type
+${activeTripType === type
                       ? "bg-white text-black"
                       : "hover:bg-gray-700 hover:text-white"
                     }`}
@@ -187,14 +186,15 @@ function Hero() {
                   >
                     <option value="" disabled>
                       Select Plane Type
-                    </option>
+      </option>
                     <option value="Turbo prop">Turbo prop</option>
                     <option value="Jet">Jet</option>
                     <option value="Helicopter">Helicopter</option>
                   </select>
                 </div>
               </div>
-<Link to={"thank"}>
+
+              <Link to={"thank"}>
               <button className="mt-4 w-full py-3 bg-white text-black font-semibold rounded transition-all duration-300 hover:bg-gray-200">
                 Book Your Flight
               </button></Link>
